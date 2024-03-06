@@ -1,8 +1,8 @@
 package figuras;
-public class Circulo {
+public class Circunferencia {
     private double rad;
 
-    public Circulo(double radio) {
+    public Circunferencia(double radio) {
         this.rad = radio;
     }
     public double getRad() {
@@ -21,7 +21,7 @@ public class Circulo {
         System.out.println(area);
     }
 
-    public boolean esIgual (Circulo otro, boolean conDecimales) {
+    public boolean esIgual (Circunferencia otro, boolean conDecimales) {
         double radio1 = this.rad;
         double radio2 = otro.getRad();
         if (conDecimales) {
