@@ -1,6 +1,5 @@
 package figuras;
 public class Circunferencia {
-    public static final double PI = 3.1416;
     private double radio;
     private String color;
 
@@ -20,7 +19,7 @@ public class Circunferencia {
         String color = this.color;
         System.out.println("Di�metro: " + 2 * radio);
         System.out.println("Color: " + color);
-        double area = 2 * PI * radio * radio;
+        double area = 2 * 3.1416 * radio * radio;
         System.out.println(area);
     }
 
