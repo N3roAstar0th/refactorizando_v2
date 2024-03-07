@@ -26,24 +26,17 @@ public class Circunferencia {
     }
 
     private double calcularArea() {
-        double area = 2 * PI * radio * radio;
-        return area;
+        return 2 * PI * radio * radio;
     }
 
-    public boolean esIgual (Circunferencia otro, boolean conDecimales) {
+    public boolean esIgual (boolean considerarDecimales, Circunferencia otro) {
         double radio1 = this.radio;
         double radio2 = otro.getRadio();
-        if (conDecimales) {
-            if (radio1 == radio2)
-                return true;
-            else
-                return false;
+        if (considerarDecimales) {
+            return radio1 == radio2;
         }
         else {
-            if (Math.abs(radio1-radio2)<1)
-                return true;
-            else
-                return false;
+            return Math.abs(radio1 - radio2) < 1;
         }
     }
 }
